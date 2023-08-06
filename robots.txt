@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lykelee.github.io/sitemap.xml
