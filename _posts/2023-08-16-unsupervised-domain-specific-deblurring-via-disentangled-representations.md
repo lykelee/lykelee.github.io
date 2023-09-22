@@ -1,5 +1,5 @@
 ---
-title: "Unsupervised Domain-Specific Deblurring via Disentangled Representations (2019)"
+title: "[논문 리뷰] Unsupervised Domain-Specific Deblurring via Disentangled Representations"
 categories:
   - Computer Science
 tags:
