@@ -152,20 +152,23 @@ f: \mathbb{R}^n \to \mathbb{R}^m, \quad f(\mathbf x) = A\mathbf x
 $$
 
 $\mathrm{rank}(A) = n \le m$이라고 하자. 그러면 $A$의 영공간(null space)의 차원은 $n - \mathrm{rank}(A) = 0$이다 (rank-nullity theorem). 따라서 $f$는 단사함수이다. 따라서 $f$는 왼쪽 역함수를 가진다.
-앞에서 설명한 대로 $f$가 전단사함수가 아니면($n < m$) 왼쪽 역함수는 유일하지 않다. 그러나 그 중 선형 변환인 것은 유일하다. 선형인 왼쪽 역함수를 $g(\mathbf x) = B\mathbf x$라고 하면
+
+$\mathrm{rank}(A) = m \le n$이라고 하자. 그러면 $A$의 열공간(column space)은 $f$의 공역 $\mathbb{R}^m$과 같다. 따라서 $f$는 전사함수이다. 따라서 $f$는 오른쪽 역함수를 가진다.
+
+$\mathrm{rank}(A) = m = n$이라고 하자. 그러면 $f$는 전단사함수이므로 역함수를 가진다. 그리고 (유일한) 역함수는 $A$의 역행렬 $A^{-1}$로 표현되는 선형 변환이다.
+
+$f$가 역함수를 가지는 경우 역함수는 역행렬로 간단히 표현됨은 쉽게 알 수 있지만, 일반적인 왼쪽 또는 오른쪽 역함수는 어떤 형태인지 의문이 들 수 있다.
+앞에서 설명한 대로 $f$가 전단사함수가 아니면($n < m$) 왼쪽 역함수는 유일하지 않다. 또한 선형 변환이라는 보장도 없다. 그러나 그 중 선형 변환인 것은 유일하다. 선형인 왼쪽 역함수를 $g(\mathbf x) = B\mathbf x$라고 하면
 
 $$ B = (A^{\mathrm T} A)^{-1} A^{\mathrm{T}} $$
 
 이다.
 
-$\mathrm{rank}(A) = m \le n$이라고 하자. 그러면 $A$의 열공간(column space)은 $f$의 공역 $\mathbb{R}^m$과 같다. 따라서 $f$는 전사함수이다. 따라서 $f$는 오른쪽 역함수를 가진다.
-마찬가지로 $f$가 전단사함수가 아니면($m < n$) 오른쪽 역함수는 유일하지 않으나 선형 변환인 것은 유일하다. 선형인 오른쪽 역함수를 $g(\mathbf x) = B\mathbf x$라고 하면
+마찬가지로 $f$가 전단사함수가 아니면($m < n$) 오른쪽 역함수는 유일하지 않고 일반적으로 선형 변환도 아니지만, 선형 변환인 것은 유일하다. 선형인 오른쪽 역함수를 $g(\mathbf x) = B\mathbf x$라고 하면
 
 $$ B = A^{\mathrm T} (A A^{\mathrm T})^{-1} $$
 
 이다.
-
-$\mathrm{rank}(A) = m = n$이라고 하자. 그러면 $f$는 전단사함수이므로 역함수를 가진다. 그리고 (유일한) 역함수는 $A$의 역행렬 $A^{-1}$로 표현된다.
 
 이 내용은 [Moore–Penrose inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse)와 관련이 있다.
 위에서 설명한 선형 변환인 왼쪽 역함수와 오른쪽 역함수를 표현하는 행렬은 Moore–Penrose inverse에 해당한다.
